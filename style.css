@@ -1,0 +1,147 @@
+
+body {
+  font-family: Arial;
+  margin: 0;
+  font-size: large;
+}
+
+/*Contains the front page image*/
+
+header {
+  display: wrap;
+  padding: 10px;
+  text-align: center;
+  background: rgb(14, 78, 255);
+  color: #0e0e0e;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Main Header, above and below*/
+
+h1 {
+  border: 2px solid black;
+  padding: 1px;
+  font-size: 300%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Used the above line to force the size & new font*/
+
+.headerimg {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+/* Primary image first displayed on the page*/
+
+p {
+  font-size: 100%;
+}
+
+
+/*Both upper lines used to specifically size each line.*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: top;
+}
+
+/*Varibles within main used to designate position & sizing*/
+
+button {
+  font-size: 150%;
+  color: black;
+  height: fit-content;
+  align-self: center;
+}
+
+/*Buttons for the top of the page*/
+
+.card {
+  border-style: solid;
+  border-width: 10px;
+  padding: 10px;
+  float: top;
+  width: 100%;
+  background-color: #5adcfd;
+}
+
+/*Background for each box*/
+
+
+.card header {
+  justify-content: center;
+  padding: 15px;
+  width: 98%
+}
+
+/*Header for each box*/
+
+nav {
+  display: flex;
+  background-color: #5aaefd;
+  justify-content: center;
+
+}
+
+/*Navigation bar for buttons*/
+
+.card p {
+  text-align: center;
+}
+
+
+
+/*Introductory paragraph on top of page*/
+
+.card img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjusts the images within the cards; kept it at 100% for optimal size*/
+
+footer {
+  padding: 40px;
+  font-size: 120%;
+  text-align: center;
+  background:rgb(14, 78, 255);
+  color: #000000;
+  margin-top: auto;
+}
+
+/* Maintains the footer elements at the bottom of the page*/
+/* Media elements adjust screen size dependent on platform*/
+
+@media screen and (max-width: 992px) {
+  header {
+    background-color: rgb(0, 34, 128);
+    width: 100%;
+  }
+}
+
+/* Changes the background color for the card headers at 992 or less px */
+
+@media screen and (max-width: 768px) {
+  .card {
+    background-color: rgb(47, 248, 255);
+  }
+
+}
+
+/* Changes the color for the cards at 768 or less px */
+
+@media screen and (max-width: 576px) {
+  .card {
+    background-color: #8ad0ff;
+  }
+}
+
+/* Changes the color for the cards at 576 or less px */
